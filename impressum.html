@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impressum – Ferienwohnung Taunuslodge</title>
+  <meta name="description" content="Impressum der Ferienwohnung Taunuslodge in Musterstadt. Kontaktinformationen und rechtliche Hinweise gemäß §5 TMG.">
+  <style>
+    :root {
+      --primary: #0077b6;
+      --accent: #0096c7;
+      --bg: #f7fbff;
+      --text: #222;
+      --muted: #555;
+      font-family: system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(120deg, var(--primary), var(--accent));
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    section {
+      padding: 1.5rem;
+    }
+    h2 {
+      color: var(--primary);
+      margin-top: 1.5rem;
+    }
+    footer {
+      background: #eee;
+      padding: 1rem;
+      text-align: center;
+      font-size: .9rem;
+      color: var(--muted);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Impressum</h1>
+    <p>Ferienwohnung Taunuslodge</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Angaben gemäß § 5 TMG</h2>
+      <p>
+        <strong>Ferienwohnung Taunuslodge</strong><br>
+        Inhaberin: <strong>Martina Philipp</strong><br>
+        Dürerstraße 83A<br>
+        61267 Neu-Anspach<br>
+        Deutschland
+      </p>
+
+      <p>
+        📞 <strong>Telefon:</strong> +49 (0) 174 99 10 80 8<br>
+        ✉️ <strong>E-Mail:</strong> <a id="mailLink" href="#" aria-label="E-Mail senden">E-Mail senden</a>
+      </p>
+
+      <p><em>Gemäß § 19 UStG wird keine Umsatzsteuer berechnet oder ausgewiesen (Kleinunternehmerregelung).</em></p>
+
+      <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+      <p>
+        Martina Philipp<br>
+        Dürerstraße 83A<br>
+        61267 Neu-Anspach
+      </p>
+
+      <h2>Haftungsausschluss (Disclaimer)</h2>
+      <h3>Haftung für Inhalte</h3>
+      <p>
+        Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+      </p>
+
+      <h3>Haftung für Links</h3>
+      <p>
+        Unser Angebot enthält ggf. Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. 
+        Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. 
+        Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+      </p>
+
+      <h3>Urheberrecht</h3>
+      <p>
+        Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. 
+        Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts 
+        bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+      </p>
+
+      <h2>Streitschlichtung</h2>
+      <p>
+        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+        <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr</a>.<br>
+        Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+      </p>
+
+      <h2>Datenschutz</h2>
+      <p>
+        Informationen zum Datenschutz finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
+      </p>
+
+      <p><a href="index.html">← Zurück zur Startseite</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Ferienwohnung Taunuslodge · <a href="index.html" style="color:inherit;">Startseite</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+<script>
+  (function(){
+    const user = "martina-oswald";
+    const domain = "web.de";
+    const mail = user + "@" + domain;
+    const a = document.getElementById("mailLink");
+    a.href = "mailto:" + mail;
+    a.textContent = mail;
+  })();
+</script>
+
+</html>
